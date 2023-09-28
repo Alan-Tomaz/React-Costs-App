@@ -1,85 +1,8 @@
 {
   "projects": [
-    {
-      "category": {
-        "id": "2",
-        "name": "Development"
-      },
-      "name": "hfjgxyu",
-      "budget": "15486456",
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "dgffshk",
-      "budget": "746786",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "dgffshk",
-      "budget": "746786",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "bdfgcgh",
-      "budget": "456",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "hgfhvxh",
-      "budget": "5454",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "vbnvbn",
-      "budget": "74556",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "HUJHGHJ",
-      "budget": "46456",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    }
+
   ],
-  "categories": [
-    {
+  "categories": [{
       "id": 1,
       "name": "Infra"
     },
