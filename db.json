@@ -1,8 +1,7 @@
 {
-  "projects": [
-
-  ],
-  "categories": [{
+  "projects": [],
+  "categories": [
+    {
       "id": 1,
       "name": "Infra"
     },
