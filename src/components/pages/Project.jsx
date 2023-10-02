@@ -3,12 +3,16 @@ import styles from './Project.module.css';
 import { useParams } from 'react-router-dom';
 import Loading from '../layout/Loading';
 import Container from '../layout/Container';
+import ProjectForm from '../project/ProjectForm';
+import Message from '../layout/Message';
 
 function Project() {
 
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false);
     const { id } = useParams();
+    const [message, setMessage] = useState();
+    const [type, setType] = useState();
 
     useEffect(() => {
         setTimeout(() => {
@@ -25,6 +29,31 @@ function Project() {
 
     }, [id])
 
+    function editPost(project) {
+        // budget validation
+        if (project.budget < project.cost) {
+            setMessage("The budget cannot be less than the project cost!");
+            setType("error");
+            return false;
+        }
+
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(project)
+        })
+            .then(resp => resp.json())
+            .then(data => {
+                setProject(data)
+                setShowProjectForm(false);
+                setMessage("Project Updated!");
+                setType("success");
+            })
+            .catch(err => console.log(err))
+    }
+
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm);
     }
@@ -33,6 +62,7 @@ function Project() {
         <>
             {project.name ? (<div className={styles.project_details}>
                 <Container customClass="column">
+                    {message && <Message type={type} msg={message} />}
                     <div className={styles.details_container}>
                         <h1>Project: {project.name}</h1>
                         <button className={styles.btn} onClick={toggleProjectForm}>{!showProjectForm ? "Edit Project" : "Close"}</button>
@@ -51,7 +81,7 @@ function Project() {
 
                         ) : (
                             <div className={styles.project_info}>
-                                <p>Details Of The Project</p>
+                                <ProjectForm handleSubmit={editPost} btnText="Finish Editing" projectData={project} />
                             </div>
                         )}
                     </div>
