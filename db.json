@@ -7,8 +7,21 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 200,
+      "services": [
+        {
+          "name": "Service 1",
+          "cost": "100",
+          "description": "Service ",
+          "id": "d457d0c8-24f5-4aa7-b3e0-98508df81124"
+        },
+        {
+          "name": "Service 2",
+          "cost": "100",
+          "description": "Service ",
+          "id": "5eeac285-48d8-40a4-b30a-c58a808008fe"
+        }
+      ],
       "id": 1
     }
   ],
