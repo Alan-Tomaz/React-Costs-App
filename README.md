@@ -13,8 +13,8 @@ Based on the project created, it is possible to define services linked to them, 
 
 ![Create Project](https://i.imgur.com/Q0D5ZNM.png)
 
-O site foi criado utilizando a biblioteca React, com os pacotes React Icons, React Router Dom, Json Server e o pacote UUID.
+The website was created using the React library, with the React Icons, React Router Dom, Json Server packages and the UUID package.
 
-Para a criação do projeto foi utilizado ferramentas como o React Fragments, CSS modules, useState Hook e conceitos como a renderização condicional, State Lift e componentização
+To create the project, tools such as React Fragments, CSS modules, useState Hook and concepts such as conditional rendering, State Lift and componentization were used.
 
 ![Edit Project](https://i.imgur.com/HJX0sMv.png)
