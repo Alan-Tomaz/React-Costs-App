@@ -7,22 +7,33 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 200,
+      "cost": 2200,
       "services": [
         {
           "name": "Service 1",
-          "cost": "100",
-          "description": "Service ",
-          "id": "d457d0c8-24f5-4aa7-b3e0-98508df81124"
+          "cost": "500",
+          "description": "Service",
+          "id": "3eabb6ac-bfad-4ea9-8aa8-2c69d622fce0"
         },
         {
           "name": "Service 2",
-          "cost": "100",
-          "description": "Service ",
-          "id": "5eeac285-48d8-40a4-b30a-c58a808008fe"
+          "cost": "1700",
+          "description": "Service",
+          "id": "f2ddd9b3-7529-4dfd-a8ee-49c07e9fc9f0"
         }
       ],
       "id": 1
+    },
+    {
+      "name": "Project 2",
+      "budget": "100000",
+      "category": {
+        "id": "4",
+        "name": "Planning"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
     }
   ],
   "categories": [
